@@ -1,10 +1,10 @@
 {
-    "name": "vscode-leetcode",
-    "displayName": "LeetCode",
+    "name": "vscode-leetcode-modified",
+    "displayName": "LeetCode modified",
     "description": "Solve LeetCode problems in VS Code",
     "version": "0.18.4",
     "author": "LeetCode",
-    "publisher": "LeetCode",
+    "publisher": "magicwenli",
     "license": "MIT",
     "icon": "resources/LeetCode.png",
     "engines": {
@@ -12,9 +12,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/LeetCode-OpenSource/vscode-leetcode"
+        "url": "https://github.com/magicwenli/vscode-leetcode"
     },
-    "homepage": "https://github.com/LeetCode-OpenSource/vscode-leetcode/blob/master/README.md",
+    "homepage": "https://github.com/magicwenli/vscode-leetcode/blob/master/README.md",
     "categories": [
         "Other",
         "Snippets"
@@ -296,7 +296,7 @@
                     "leetcode.hideSolved": {
                         "type": "boolean",
                         "default": false,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Hide solved problems."
                     },
                     "leetcode.defaultLanguage": {
@@ -320,7 +320,7 @@
                             "swift",
                             "typescript"
                         ],
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Default language for solving the problems."
                     },
                     "leetcode.showDescription": {
@@ -336,50 +336,50 @@
                             "Show the problem description in a new webview window",
                             "Show the problem description in the file's comment"
                         ],
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Specify where to show the description."
                     },
                     "leetcode.showCommentDescription": {
                         "type": "boolean",
                         "default": false,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "[Deprecated] Include problem description in comments.",
                         "deprecationMessage": "This setting will be deprecated in 0.17.0, please use 'leetcode.showDescription' instead"
                     },
                     "leetcode.hint.setDefaultLanguage": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Show a hint to set the default language."
                     },
                     "leetcode.hint.configWebviewMarkdown": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Show a hint to change webview appearance through markdown config."
                     },
                     "leetcode.hint.commentDescription": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Show a hint to enable comment description in solution code file."
                     },
                     "leetcode.hint.commandShortcut": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Show a hint to configure commands key binding."
                     },
                     "leetcode.useWsl": {
                         "type": "boolean",
                         "default": false,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Use the Windows Subsystem for Linux."
                     },
                     "leetcode.endpoint": {
                         "type": "string",
                         "default": "leetcode",
-                        "scope": "application",
+                        "scope": "window",
                         "enum": [
                             "leetcode",
                             "leetcode-cn"
@@ -389,18 +389,18 @@
                     "leetcode.useEndpointTranslation": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Use endpoint's translation (if available)"
                     },
                     "leetcode.workspaceFolder": {
                         "type": "string",
-                        "scope": "application",
+                        "scope": "window",
                         "description": "The path of the workspace folder to store the problem files.",
                         "default": ""
                     },
                     "leetcode.filePath": {
                         "type": "object",
-                        "scope": "application",
+                        "scope": "window",
                         "description": "The output folder and filename to save the problem files.",
                         "properties": {
                             "default": {
@@ -642,7 +642,7 @@
                     "leetcode.enableStatusBar": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Show the LeetCode status bar or not."
                     },
                     "leetcode.editor.shortcuts": {
@@ -651,7 +651,7 @@
                             "submit",
                             "test"
                         ],
-                        "scope": "application",
+                        "scope": "window",
                         "items": {
                             "type": "string",
                             "enum": [
@@ -674,25 +674,25 @@
                     "leetcode.enableSideMode": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Determine whether to group all webview pages into the second editor column when solving problems."
                     },
                     "leetcode.nodePath": {
                         "type": "string",
                         "default": "node",
-                        "scope": "application",
+                        "scope": "window",
                         "description": "The Node.js executable path. for example, C:\\Program Files\\nodejs\\node.exe"
                     },
                     "leetcode.colorizeProblems": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Add difficulty badge and colorize problems files in explorer tree."
                     },
                     "leetcode.problems.sortStrategy": {
                         "type": "string",
                         "default": "None",
-                        "scope": "application",
+                        "scope": "window",
                         "enum": [
                             "None",
                             "Acceptance Rate (Ascending)",
@@ -703,7 +703,7 @@
                     "leetcode.allowReportData": {
                         "type": "boolean",
                         "default": true,
-                        "scope": "application",
+                        "scope": "window",
                         "description": "Allow LeetCode to report anonymous usage data to improve the product."
                     }
                 }

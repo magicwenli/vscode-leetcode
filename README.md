@@ -1,4 +1,14 @@
-# LeetCode
+# LeetCode Modified
+
+## Fork Declaration
+
+This is a Forked Project [vscode-leetcode](https://github.com/LeetCode-OpenSource/vscode-leetcode)
+
+### Changes
+
+- Change setting scope to windows([#698](https://github.com/LeetCode-OpenSource/vscode-leetcode/pull/698))
+
+## Original Readme
 
 > Solve LeetCode problems in VS Code
 
